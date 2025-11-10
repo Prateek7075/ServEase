@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.servease-navbar{
+    background-color: #1E2A38;
+    padding: 0 !important;
+    
+}
+.servease-brand{
+    color: white !important;
+    font-size: 50px !important;
+}
+
+.servease-logo{
+    height: 60px;
+    
+}
+.second-half-logo{
+    color: #36C1B4;
+}
+
+.login-register-links .nav-link{
+    
+    color: white !important;
+    font-size: 15px;
+    margin: 10px;
+}
+.login-register-links .nav-link:hover{
+    /* background-color: white !important;
+    color: #36C1B4 !important; */
+    
+    border-bottom: 4px solid white;
+}
+
+.login-button {
+    background-color: #317873 !important; /* Primary Teal */
+    width: auto !important;
+    color: #ffffff !important;
+    padding: 6px 14px;
+    border: #317873 2px solid !important;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: white !important; /* Slightly darker on hover */
+    color: #1E2A38 !important;
+    border: #ffffff 2px solid !important;
+    transition: 0.5s;
+}

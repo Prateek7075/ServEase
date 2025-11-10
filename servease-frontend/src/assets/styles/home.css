@@ -1,0 +1,13 @@
+.join-cards{
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0px !important;
+}
+
+.join-cards .register-btn{
+    border-radius: 0px;
+}
+
+
+
+
