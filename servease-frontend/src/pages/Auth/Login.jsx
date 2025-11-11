@@ -33,7 +33,7 @@ const Login = () => {
             fluid
             className="d-flex justify-content-center align-items-center"
             style={{
-                minHeight: '100vh',
+                minHeight: '90vh',
                 background: 'linear-gradient(135deg, #f7f8fc 0%, #e9effd 100%)',
             }}
         >
@@ -46,7 +46,7 @@ const Login = () => {
                             backgroundColor: '#ffffff',
                         }}
                     >
-                        <h3 className="text-center mb-3" style={{ color: '#0d6efd', fontWeight: '600' }}>
+                        <h3 className="text-center mb-3" style={{ color: '#198754', fontWeight: '600' }}>
                             Welcome Back
                         </h3>
                         <p className="text-center text-muted mb-4">
@@ -99,6 +99,7 @@ const Login = () => {
                                         fontWeight: '500',
                                         letterSpacing: '0.5px',
                                         transition: '0.3s ease',
+                                        backgroundColor: '#198754',         
                                     }}
                                 >
                                     Sign In
@@ -111,7 +112,7 @@ const Login = () => {
                             <a
                                 href="/register"
                                 style={{
-                                    color: '#0d6efd',
+                                    color: '#198754',
                                     textDecoration: 'none',
                                     fontWeight: '500',
                                 }}
