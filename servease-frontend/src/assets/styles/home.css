@@ -1,13 +1,162 @@
-.join-cards{
-    width: 100% !important;
-    height: 100% !important;
-    border-radius: 0px !important;
+/* ===============================
+   HOME PAGE - Premium Modern Design
+   =============================== */
+
+/* --- Global Page Background --- */
+body {
+  background: linear-gradient(135deg, #e8f9f2, #f7fcff);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
 
-.join-cards .register-btn{
-    border-radius: 0px;
+/* --- Container Styling --- */
+.home-container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
 }
 
+/* --- Headline Section --- */
+.home-container h1 {
+  font-weight: 400;
+  color: #080808;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  text-shadow: 1px 1px 3px rgba(0, 128, 96, 0.15);
+  animation: fadeInUp 1.2s ease forwards;
+}
 
+.home-container .lead {
+  font-size: 1.25rem;
+  color: #555;
+  margin-top: 15px;
+  font-weight: 400;
+  animation: fadeInUp 1.5s ease forwards;
+}
 
+/* --- Cards Layout --- */
+.join-cards {
+  border-radius: 18px !important;
+  transition: all 0.4s ease;
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
 
+.join-cards::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(90deg, #00b894, #00cec9);
+  transition: width 0.4s ease;
+}
+
+.join-cards:hover::before {
+  width: 100%;
+}
+
+.join-cards:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Card Titles --- */
+.join-cards .card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.text-success {
+  color: #16a085 !important;
+}
+
+.text-warning {
+  color: #f39c12 !important;
+}
+
+/* --- Card Text --- */
+.join-cards .card-text {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* --- Buttons --- */
+.register-btn {
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 12px 28px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.4px;
+  transition: all 0.3s ease;
+}
+
+/* Green Button */
+.btn-success.register-btn {
+  background: linear-gradient(90deg, #00b894, #00cec9);
+  color: white;
+}
+
+.btn-success.register-btn:hover {
+  background: linear-gradient(90deg, #00cec9, #00b894);
+  transform: scale(1.07);
+  box-shadow: 0 8px 18px rgba(0, 184, 148, 0.3);
+}
+
+/* Yellow Button */
+.btn-warning.register-btn {
+  background: linear-gradient(90deg, #f39c12, #f1c40f);
+  color: #fff;
+}
+
+.btn-warning.register-btn:hover {
+  background: linear-gradient(90deg, #f1c40f, #f39c12);
+  transform: scale(1.07);
+  box-shadow: 0 8px 18px rgba(243, 156, 18, 0.3);
+}
+
+/* --- Hover Accent Effects --- */
+.join-cards.border-success:hover {
+  border: 2px solid #00b894 !important;
+}
+
+.join-cards.border-warning:hover {
+  border: 2px solid #f39c12 !important;
+}
+
+/* --- Responsive Styling --- */
+@media (max-width: 768px) {
+  .home-container h1 {
+    font-size: 1.9rem;
+  }
+
+  .home-container .lead {
+    font-size: 1.05rem;
+  }
+
+  .join-cards {
+    margin-bottom: 25px;
+  }
+
+  .register-btn {
+    font-size: 0.95rem !important;
+    padding: 10px 22px !important;
+  }
+}
+
+/* --- Animations --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

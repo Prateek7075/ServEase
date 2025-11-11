@@ -20,7 +20,6 @@ function App() {
 
     if (loading) {
         return (
-            // Guaranteed non-crashing loading screen using only basic HTML/CSS
             <div style={{ textAlign: 'center', marginTop: '20vh', color: '#007bff' }}>
                 <h1>Loading Servease...</h1>
                 <div style={{ 
@@ -38,7 +37,6 @@ function App() {
     }
 
     return (
-        // Fragment used as BrowserRouter is in main.jsx
         <> 
             <Navbar />
             <Routes>
@@ -64,4 +62,4 @@ function App() {
     );
 }
 
-export default App; // Ensure this line is present
+export default App;
