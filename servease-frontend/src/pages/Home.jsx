@@ -28,7 +28,7 @@ const Home = () => {
                     </Card>
                 </Col>
                 <Col md={6}>
-                    <Card className="shadow-lg border-warning join-cards">
+                    <Card className="shadow-lg border-warning join-cards provider">
                         <Card.Body className="text-center">
                             <Card.Title className="text-warning">I'm a Service Provider</Card.Title>
                             <Card.Text>

@@ -55,6 +55,28 @@ body {
   transition: width 0.4s ease;
 }
 
+.provider{
+  border-radius: 18px !important;
+  transition: all 0.4s ease;
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.provider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(90deg, #f39c12, #f39c12);
+  transition: width 0.4s ease;
+}
+.provider::before:hover{
+  width: 100%;
+}
+
 .join-cards:hover::before {
   width: 100%;
 }
